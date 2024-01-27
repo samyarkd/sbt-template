@@ -155,8 +155,7 @@ contract SbtItem {
             collectionData = (self.content!!).asSlice().asString();
         }
         b.append(collectionData);
-        b.append(self.item_index.toString());
-        b.append(".json");
+        b.append("item.json");
 
         return GetNftData {
             is_initialized: self.is_initialized, 
